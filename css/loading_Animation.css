@@ -1,0 +1,106 @@
+
+/* loading dots */
+.fa-solid{
+    color: white;
+    font-size: 3vh;
+    letter-spacing: 2vh;
+    animation-name: dots;
+    animation-duration: 2.5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+.fa-solid:nth-child(2){
+    animation-delay: 0.4s;
+}
+.fa-solid:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+
+
+@keyframes dots {
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateY(1.08vh);
+    }
+}
+
+
+/* Main animation */
+
+loading{
+    animation-name: shrink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shrink {
+    10%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Right animations */
+
+.r1{
+    animation: r1 1s ease-in-out 6.8s 1 forwards;
+}
+.r2{
+    animation: r2 1s ease-in-out 7s 1 forwards;
+}
+.r3{
+    animation: r3 1s ease-in-out 7.2s 1 forwards;
+}
+
+@keyframes r1 {
+    100%{
+        transform: scale(3) translateX(25vw);
+    }
+}
+
+@keyframes r2 {
+    100%{
+        transform: scale(3) translateX(35vw);
+    }
+}
+@keyframes r3 {
+    100%{
+        transform: scale(3) translateX(45vw);
+    }
+}
+
+.l1{
+    animation: l1 1s ease-in-out 6.8s 1 forwards;
+}
+.l2{
+    animation: l2 1s ease-in-out 7s 1 forwards;
+}
+.l3{
+    animation: l3 1s ease-in-out 7.2s 1 forwards;
+}
+
+
+
+@keyframes l1 {
+    100%{
+        transform: scale(3) translateX(-25vw);
+    }
+}
+@keyframes l2 {
+    100%{
+        transform: scale(3) translateX(-35vw);
+    }
+}
+@keyframes l3 {
+    100%{
+        transform: scale(3) translateX(-45vw);
+    }
+}

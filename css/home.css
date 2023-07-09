@@ -1,0 +1,181 @@
+body{
+    background-color: #333350;
+    transition: background-color 2s linear;
+    -webkit-transition: background-color 2s linear;
+    -ms-transition: background-color 2s linear;
+    -o-transition: background-color 2s linear;
+    -ms-transition: background-color 2s linear;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Archivo, sans-serif;
+    color: white;
+}
+
+.changeBackground{
+    background-color: #2B2B52;
+}
+
+.wave{
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    right: -50vw;
+    /* transform: translateX(100%); */
+    animation: floatIn 2s ease-in-out 1 forwards;
+}
+
+.wave:nth-child(2){
+    animation-delay: .2s;
+}
+.wave:nth-child(3){
+    animation-delay: .4s;
+}
+.wave:nth-child(4){
+    animation-delay: .6s;
+}
+
+@keyframes floatIn {
+    /* 0%{
+        transform: translateX(100%);
+    } */
+    100%{
+        right: 0;
+    }
+}
+
+/* main{
+    position: fixed;
+} */
+
+h4{
+    font-size: 2vh;
+}
+h1{
+    font-size: 6vh;
+}
+
+
+#visual{
+    width: 60vw !important;
+    height: 53vh !important;
+    animation: rotation 100s infinite linear;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(449deg);
+    }
+}
+
+
+.blobs{
+    position: absolute;
+    left: -5vw;
+    top: 16vh;
+    /* transform: rotate(90deg); */
+}
+
+#intro{
+    position: absolute;
+    left: 17.7vw;
+    top: 34vh;
+    font-size: 4.2vh;
+}
+.light{
+    font-weight: 300;
+}
+.heavy{
+    font-family:"Archivo Black";
+    letter-spacing: -0.05vh;
+}
+.ultraLight{
+    color: #FFF;
+    font-size: 3.01vh;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 0%;
+    letter-spacing:  0.045vh;
+}
+.infoText{
+    position: absolute;
+    left: 17vw;
+    top: 59vh;
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 2.2vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0.05vh;
+}
+
+.logo{
+    margin: 4.2vh 0 0 2vw;
+    height: 6vh;
+    width: auto;
+}
+
+.contact{
+    position: absolute;
+    top: -6.7vh;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.hoverEffect{
+    /* display: inline-block; */
+    position: relative;
+}
+.hoverEffect::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.2vh;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+.hoverEffect:hover::before{
+    width: 100%;
+}
+
+.seeWork{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 70vh;
+    left: 19vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.workText{
+    margin: 0 1vw 0 0;
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0%;
+    letter-spacing: 0.07vh;
+
+    transition: margin 0.5s ease-out;
+}
+
+main{
+    animation: pop 1s ease-in-out 1 forwards;
+}
+
+@keyframes pop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

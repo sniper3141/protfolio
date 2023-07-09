@@ -1,0 +1,78 @@
+/* background image */
+
+body {
+    background-color: black;
+    background: url(Loading_Background.svg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* blurry box */
+main{
+    width: 64.43vw;
+    height: 86.76vh;
+
+    border-radius: 2.26vh;
+    background: rgba(217, 217, 217, 0.45);
+    /* filter: blur(0.2vh); */
+    backdrop-filter: blur(1.61vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* loading text */
+.loading{
+    width: 54.1vw;
+    height: 34.2vh;
+    color: #FFF;
+    text-align: center;
+    font-family: Dela Gothic One;
+    font-size: 19.5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.194vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* loading dots */
+.fa-solid{
+    color: white;
+    font-size: 3vh;
+    letter-spacing: 2vh;
+    animation-name: dots;
+    animation-duration: 2.5s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+
+.fa-solid:nth-child(2){
+    animation-delay: 0.4s;
+}
+.fa-solid:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+
+
+@keyframes dots {
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateY(1.08vh);
+    }
+}
+
+
