@@ -1,5 +1,5 @@
 body{
-    background-color: #333350;
+    background-color: #2B2B52;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -54,7 +54,8 @@ loading{
 
 
     border-radius: 2.26vh;
-    background: rgba(217, 217, 217, 0.45);
+    background: rgba(90, 141, 218, 0.45);
+
     /* filter: blur(0.2vh); */
     backdrop-filter: blur(1.61vh);
     display: flex;

@@ -1,5 +1,5 @@
-const body = document.querySelector("body")
-body.classList.add("changeBackground")
+// const body = document.querySelector("body")
+// body.classList.add("changeBackground")
 
 
 const tween = KUTE.fromTo(
@@ -60,10 +60,30 @@ function revertMargin(){
 
 
 
+const wave4 = call(".w4")
+const main = call("main")
+const waveGroup = call(".wave")
+
+
+wave4.addEventListener("mouseover", wavehover => {
+    waveGroup.style.zIndex = 3;
+    console.log("Helloooo")
+})
+wave4.addEventListener("mouseout", waveout => {
+    setTimeout(function(){
+        waveGroup.style.zIndex = 0;
+    }, 700);
+    
+    console.log("Helloooo")
+})
+
+setTimeout(function(){
+    wave4.classList.add("pos4")
+    wave4.classList.remove("float4")
+}, 1500);
 
 
 function call(item){
     return document.querySelector(item);
 }
-
 
